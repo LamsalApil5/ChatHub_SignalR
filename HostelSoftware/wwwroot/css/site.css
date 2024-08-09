@@ -1,0 +1,53 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#messagesList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.message-item {
+    display: block;
+    max-width: 70%; /* Adjust based on design */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    clear: both;
+}
+
+.my-message {
+    background-color: #007bff; /* User's message background color */
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
+
+.other-message {
+    background-color: #f8f9fa; /* Other users' message background color */
+    color: #212529;
+    text-align: left;
+    margin-right: auto;
+}

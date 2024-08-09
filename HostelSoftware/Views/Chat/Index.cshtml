@@ -1,0 +1,31 @@
+﻿@{
+    var userIpAddress = Context.Connection.RemoteIpAddress?.ToString();
+}
+
+<div class="container" style="max-width: 500px; margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+    <h3 class="text-center">Anonymous Chat</h3>
+    <div class="row p-1">
+        <div class="col-12">
+            <input type="text" class="form-control" id="messageInput" placeholder="Enter your message" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 text-end">
+            <input type="button" id="sendButton" value="Send Message" class="btn btn-primary" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12">
+            <ul id="messagesList" class="list-unstyled" style="height: 400px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #fff;"></ul>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
